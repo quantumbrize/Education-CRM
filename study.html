@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material and Popular Papers</title>
+    <link rel="stylesheet" href="style/study.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="heading">
+        <a href="/index.html"><img src="/assets/images/arrow.svg" alt="Back"></a>
+        <h2>Study</h2>
+    </div>
+    <header>
+        <div class="search-bar">
+            <img src="/assets/images/Fill 1.png" alt="Search Icon" class="search-icon">
+            <input type="text" placeholder="Graphic Design...">
+            <img src="/assets/images/FILTER.svg" alt="Filter Icon" class="filter-icon">
+        </div>
+    </header>
+    
+
+    <!-- Filters -->
+    <div class="switch-buttons">
+        <button class="switch-button active" id="popularPaperBtn">Popular Paper</button>
+        <button class="switch-button" id="studyMaterialBtn">Study Material</button>
+    </div>
+
+    <div class="content">
+        <div id="popularPaperContent" class="content-item active">
+            <div id="banner-container" class="banner-container">
+              
+                <!-- Popular papers will be dynamically inserted here -->
+            </div>
+        </div>
+        <div id="studyMaterialContent" class="content-item">
+            <div class="study-material" id="study-material">
+                <!-- Dynamic content will be inserted here -->
+                 <img src="/assets/images/save.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
+            <li><a href="study.html" class="nav-link"><i class="fas fa-book"></i></a></li>
+            <li><a href="study.html" class="nav-link"><i class="fas fa-file-alt"></i></a></li>
+            <li><a href="test.html" class="nav-link"><i class="fas fa-tasks"></i></a></li>
+            <li><a href="profile.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <script src="/javascript/study.js"></script>
+</body>
+</html>

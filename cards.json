@@ -1,0 +1,105 @@
+[
+  {
+      "tag": "Graphic Design advance",
+      "title": "Graphic Design",
+      "rating": 4.2,
+      "imagePath": "path/to/image1.jpg"
+  },
+  {
+      "tag": "web dev advanced",
+      "title": "web delopment",
+      "rating": 4.5,
+      "imagePath": "path/to/image2.jpg"
+  },
+  {
+      "tag": "data science advanced",
+      "title": "Data Science",
+      "rating": 4.7,
+      "imagePath": "path/to/image3.jpg"
+  },
+  {
+      "tag": "Advanced",
+      "title": "Machine Learning",
+      "rating": 4.8,
+      "imagePath": "path/to/image4.jpg"
+  },
+  {
+      "tag": "web dev advanced",
+      "title": "Digital Marketing",
+      "rating": 4.3,
+      "imagePath": "path/to/image5.jpg"
+  },
+  {
+      "tag": "Intermediate",
+      "title": "Cyber Security",
+      "rating": 4.6,
+      "imagePath": "path/to/image6.jpg"
+  },
+  {
+      "tag": "Advanced",
+      "title": "Cloud Computing",
+      "rating": 4.9,
+      "imagePath": "path/to/image7.jpg"
+  },
+  {
+      "tag": "web dev advanced",
+      "title": "UI/UX Design",
+      "rating": 4.4,
+      "imagePath": "path/to/image8.jpg"
+  },
+  {
+      "tag": "Intermediate",
+      "title": "Blockchain",
+      "rating": 4.5,
+      "imagePath": "/assets/images/pdfimage.png"
+  },
+  {
+      "tag": "Advanced",
+      "title": "Artificial Intelligence",
+      "rating": 4.7,
+      "imagePath": "path/to/image10.jpg"
+  },
+  {
+      "tag": "web dev advanced",
+      "title": "Photography",
+      "rating": 4.2,
+      "imagePath": "path/to/image11.jpg"
+  },
+  {
+      "tag": "Intermediate",
+      "title": "Video Editing",
+      "rating": 4.6,
+      "imagePath": "path/to/image12.jpg"
+  },
+  {
+      "tag": "Advanced",
+      "title": "Game Development",
+      "rating": 4.8,
+      "imagePath": "path/to/image13.jpg"
+  },
+  {
+      "tag": "web dev advanced",
+      "title": "Content Writing",
+      "rating": 4.3,
+      "imagePath": "path/to/image14.jpg"
+  },
+  
+  {
+      "tag": "Advanced",
+      "title": "UI/UX Design",
+      "rating": 4.7,
+      "imagePath": ""
+  },
+  {
+      "tag": "web dev advanced",
+      "title": "Blockchain",
+      "rating": 4.2,
+      "imagePath": "/assets/images/POPOLAR COURSE.png"
+  },
+  {
+      "tag": "Intermediate",
+      "title": "Artificial Intelligence",
+      "rating": 4.6,
+      "imagePath": "/assets/images/POPOLAR COURSE.png"
+  }
+]

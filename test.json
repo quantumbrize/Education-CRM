@@ -1,0 +1,12 @@
+[
+    { "subject": "data science", "questions": 20, "time": "1 hour", "date": "2024-08-15" },
+    { "subject": "cloud computing", "questions": 30, "time": "1.5 hours", "date": "2024-08-20" },
+    { "subject": "machine learning", "questions": 25, "time": "1 hour", "date": "2024-08-25" },
+    { "subject": "artificial intelligence", "questions": 35, "time": "2 hours", "date": "2024-08-30" },
+    { "subject": "big data", "questions": 40, "time": "2.5 hours", "date": "2024-09-05" },
+    { "subject": "cybersecurity", "questions": 45, "time": "3 hours", "date": "2024-09-10" },
+    { "subject": "blockchain", "questions": 20, "time": "1 hour", "date": "2024-09-15" },
+    { "subject": "internet of things", "questions": 30, "time": "1.5 hours", "date": "2024-09-20" },
+    { "subject": "robotics", "questions": 25, "time": "1 hour", "date": "2024-09-25" },
+    { "subject": "quantum computing", "questions": 35, "time": "2 hours", "date": "2024-09-30" }
+]

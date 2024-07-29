@@ -1,0 +1,264 @@
+body {
+    background-color: #F5F9FF;
+}
+
+.heading, h2, img {
+    display: flex;
+    gap: 12px;
+    margin: 7px;
+    margin-top: 20px;
+}
+.heading h2 {
+    position: relative;
+    bottom: 5px;
+}
+
+/* search */
+header {
+    display: flex;
+    justify-content: center; /* Center the search bar horizontally */
+    padding: 10px 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+    position: relative;
+    margin: 0 auto; /* Center the search bar */
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 7px;
+    width: 20px;
+    height: 20px;
+    top: 14px; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+}
+
+.search-bar input[type="text"] {
+    width: 100%; /* Take full width of the container */
+    padding: 10px 40px; /* Adjust padding for space inside the search bar */
+    height: 40px; /* Increase height for a larger search bar */
+    border: 1px solid #ccc; /* Updated border color for visibility */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    outline: none;
+}
+
+.search-bar .filter-icon {
+    position: absolute;
+    right: 10px; /* Position to the right inside the search bar */
+    width: 40px;
+    height: 40px;
+    top: 12px; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+}
+
+/* filter */
+.switch-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+}
+
+.switch-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #E8F1FF;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.switch-button.active {
+    background-color: #167D6F;
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+    margin: 20px;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.active {
+    display: block;
+}
+
+.results {
+    text-align: center;
+    margin: 20px;
+}
+
+.results a {
+    color: #046A38;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.results p {
+    color: #333;
+    font-size: 16px;
+}
+
+.study-material {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+/* Desktop View */
+.study-material .card {
+    width: calc(33.33% - 10px); /* 3 cards per row */
+    margin: 5px;
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.study-material .card img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.study-material .card h5 {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+/* banner */
+.banner-container .banner {
+    margin-bottom: 15px; /* Space between banners */
+    background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Align content horizontally */
+    align-items: center;
+    margin-right: 10px;
+}
+
+.banner-container .banner img {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-right: 15px;
+    object-fit: cover; /* Maintain aspect ratio */
+    height: 100px;
+}
+
+.banner-container .banner .banner-content {
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+    flex: 1; /* Allow content to take available space */
+}
+
+.banner-container .banner .banner-content h3 {
+    margin: 0;
+    font-size: 0.7em; /* Adjusted font size */
+    color: #FF6F00; /* Orange color for category */
+}
+
+.banner-container .banner .banner-content p {
+    margin: 0;
+    font-size: 1.4em; /* Adjusted font size */
+    color: #000000;
+    margin-top: 3px;
+}
+
+.banner-container .banner .rating {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-top: 5px; /* Space above the rating */
+}
+
+.banner-container .banner .rating .star-icon {
+    width: 15px; /* Smaller size for star */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; 
+    margin-top: 4px;/* Space between star and rating */
+}
+
+.banner-container .banner .rating .rating-value {
+    font-size: 1em; /* Adjust font size for rating */
+    color: #333; /* Rating text color */
+}
+
+/* Save icon styles */
+.banner-container .banner .banner-content-wrapper .save-icon {
+    position: absolute; /* Position the save icon absolutely */
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Active state for the save icon */
+.banner-container .banner .banner-content-wrapper .save-icon.active {
+    color: #00FF00; /* Green color for active state */
+}
+/* banner */
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensures it starts from the left edge */
+    width: 100%; /* Full width */
+    background-color: #F5F9FF;
+    display: flex;
+    justify-content: center; /* Center the navbar content */
+    padding: 10px 0;
+    margin: 0; /* Remove margin */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #757575;
+    font-weight: bold;
+}
+
+.nav-link i {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-link.active {
+    color: #000;
+}
