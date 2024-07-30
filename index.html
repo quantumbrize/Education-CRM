@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Design</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="search-bar">
-                <img src="/assets/images/Fill 1.png" alt="Search Icon" class="search-icon">
+                <img src="./assets/images/Fill 1.png" alt="Search Icon" class="search-icon">
                 <input type="text" placeholder="search for...">
-                <img src="/assets/images/FILTER.svg" alt="Filter Icon" class="filter-icon">
+                <img src="./assets/images/FILTER.svg" alt="Filter Icon" class="filter-icon">
             </div>
         </header>
-      
+
         <!-- carousel -->
         <div class="carousel">
             <div class="carousel-images">
-                <img src="/assets/images/OFFER@2x.png" alt="Image 1">
-                <img src="/assets/images/OFFER@2x.png" alt="Image 2">
-                <img src="/assets/images/OFFER@2x.png" alt="Image 3">
-                <img src="/assets/images/OFFER@2x.png" alt="Image 4">
+                <img src="./assets/images/OFFER@2x.png" alt="Image 1">
+                <img src="./assets/images/OFFER@2x.png" alt="Image 2">
+                <img src="./assets/images/OFFER@2x.png" alt="Image 3">
+                <img src="./assets/images/OFFER@2x.png" alt="Image 4">
             </div>
             <button class="carousel-button prev">‹</button>
             <button class="carousel-button next">›</button>
@@ -41,20 +43,76 @@
             <h3>Study Material</h3>
             <button class="see-all" id="see-all-material">See All ></button>
         </div>
-         
         <div class="study-material" id="study-material">
-            <!-- Dynamic content will be inserted here -->
+            <div class="row">
+                <div class="column">
+                    <img src="assets/images/pdfimage.png" alt="Descriptive Text 1">
+                    <p>first section.</p>
+                </div>
+                <div class="column">
+                    <img src="assets/images/pdfimage.png" alt="Descriptive Text 2">
+                    <p>second section.</p>
+                </div>
+                <div class="column">
+                    <img src="assets/images/pdfimage.png" alt="Descriptive Text 3">
+                    <p>third section.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="assets/images/pdfimage.png" alt="Descriptive Text 4">
+                    <p>fourth section.</p>
+                </div>
+                <div class="column">
+                    <img src="assets/images/pdfimage.png" alt="Descriptive Text 5">
+                    <p>fifth section.</p>
+                </div>
+                <div class="column">
+                    <img src="assets/images/pdfimage.png" alt="Descriptive Text 6">
+                    <p>sixth section.</p>
+                </div>
+            </div>
         </div>
+
         <!-- study-material-->
 
         <!-- test -->
         <div class="test-container">
             <div class="header">
                 <h3>Your Test</h3>
-                <a href="/test.html"><button class="see-all" id="see-all-tests">See All ></button></a>
+                <a href="./test.html"><button class="see-all" id="see-all-tests">See All ></button></a>
             </div>
             <div id="test-info">
-                <!-- Dynamic content will be inserted here -->
+                <div class="test-card">
+                    <div class="test-name">Your Test Name</div>
+                    <div class="test-details">
+                        <span>Questions 1581</span>
+                        <span>Time 10:00 A.M</span>
+                        <span>Date 24-07-24</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="test-info">
+                <div class="test-card">
+                    <div class="test-name">Your Test Name</div>
+                    <div class="test-details">
+                        <span>Questions 1581</span>
+                        <span>Time 10:00 A.M</span>
+                        <span>Date 24-07-24</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="test-info">
+                <div class="test-card">
+                    <div class="test-name">Your Test Name</div>
+                    <div class="test-details">
+                        <span>Questions 1581</span>
+                        <span>Time 10:00 A.M</span>
+                        <span>Date 24-07-24</span>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- test -->
@@ -62,7 +120,7 @@
         <!-- popular paper -->
         <div class="header">
             <h3>Popular Paper</h3>
-           <a href="study.html"><button class="see-all" id="see-all-papers">See All ></button></a>
+            <a href="study.html"><button class="see-all" id="see-all-papers">See All ></button></a>
         </div>
         <div class="button-container">
             <button class="btn">All</button>
@@ -74,11 +132,19 @@
             <button class="btn">UI/UX Design</button>
         </div>
         <!-- popular paper -->
-         <!-- card -->
-         <div class="banner-container" id="banner-container">
+        <!-- card -->
+        <div class="banner-container" id="banner-container">
             <!-- Static banner for reference -->
             <div class="banner">
-                <img src="/assets/images/pdfimage.png" alt="Banner Image">
+                <img src="assets/images/pdfimage.png" alt="Banner Image">
+                <div class="banner-content">
+                    <h3>Graphic Design</h3>
+                    <p>Advanced</p>
+                    <p>Rating: 4.2</p>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="assets/images/pdfimage.png" alt="Banner Image">
                 <div class="banner-content">
                     <h3>Graphic Design</h3>
                     <p>Advanced</p>
@@ -86,29 +152,30 @@
                 </div>
             </div>
         </div>
-         <!-- card -->
+        <!-- card -->
 
-         <!-- teacher -->
-         <div class="header">
+        <!-- teacher -->
+        <div class="header">
             <h3>Teachers</h3>
-            <a href="/pin.html"><button class="see-all" id="see-all-papers">See All ></button></a>
+            <a href="pin.html"><button class="see-all" id="see-all-papers">See All ></button></a>
         </div>
         <div class="teacher-container">
             <div id="teacher-cards" class="teacher-cards">
                 <!-- Cards will be dynamically inserted here -->
             </div>
-         <!-- teacher -->
+            <!-- teacher -->
 
-         <nav class="navbar">
-            <ul>
-                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
-                <li><a href="study.html" class="nav-link"><i class="fas fa-book"></i></a></li>
-                <li><a href="study.html" class="nav-link"><i class="fas fa-file-alt"></i></a></li>
-                <li><a href="test.html" class="nav-link"><i class="fas fa-tasks"></i></a></li>
-                <li><a href="profile.html" class="nav-link"><i class="fas fa-user"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-    <script src="/javascript/index.js"></script>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>HOME</a></li>
+                    <li><a href="study.html" class="nav-link"><i class="fas fa-book"></i>MATERIAL</a></li>
+                    <li><a href="study.html" class="nav-link"><i class="fas fa-file-alt"></i>PAPER</a></li>
+                    <li><a href="test.html" class="nav-link"><i class="fas fa-tasks"></i>ASSIGNMENT</a></li>
+                    <li><a href="profile.html" class="nav-link"><i class="fas fa-user"></i>PROFILE</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script src="./javascript/index.js"></script>
 </body>
+
 </html>

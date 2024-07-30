@@ -1,0 +1,539 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    padding: 20px;
+    background-color: #F5F9FF;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+   
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    bottom: 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    padding: 10px 10px 10px 40px; /* Adjust padding to leave space for the icon */
+    border: 1px solid #ccc; /* Updated border color for visibility */
+    border-radius: 10px;
+    margin-left: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    outline: none;
+}
+
+.search-bar .filter-icon {
+    margin-left: 10px;
+   position: relative;
+   bottom: 3px;
+}
+
+/* search */
+
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.carousel-indicators span {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators span.active {
+    background-color: white;
+}
+
+/* Study Material Section */
+.study-material {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Desktop View */
+.study-material .card {
+    width: calc(25% - 10px); /* 4 cards per row with spacing */
+    margin: 5px;
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.study-material .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.study-material .card h5 {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .study-material .card {
+        width: calc(50% - 10px); /* 2 cards per row with spacing */
+        margin: 5px;
+    }
+
+    .study-material .card img {
+        max-width: 100%;
+        height: 120px; /* Set a specific height for images */
+        object-fit: cover;
+    }
+
+    .study-material .card h5 {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .study-material .card {
+        width: calc(33.33% - 10px); /* 3 cards per row with spacing */
+        margin: 5px;
+    }
+
+    .study-material .card img {
+        max-width: 80%;
+        height: 80px; /* Adjusted height for smaller screens */
+        object-fit: cover;
+    }
+
+    .study-material .card h5 {
+        font-size: 0.8em;
+    }
+}
+
+/* Your Test Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.see-all {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.see-all:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.test-info {
+    background-color: #EBEBEB;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in a single row */
+}
+
+/* Each <p> element will have equal space around it */
+.test-info p {
+    color: #007bff;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+/* Mobile View for Your Test */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .see-all {
+        margin-top: 10px;
+    }
+
+    .test-info {
+        flex-direction: row; /* Ensure items are in a row */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+}
+
+/* paper button */
+.button-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.button-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.btn {
+    background-color: #e8f1ff;
+    color: black;
+    height: 58px;
+    width: 138px; /* Adjusted width for better visibility */
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+    padding: 0 20px; /* Inner padding */
+}
+
+.btn:active {
+    background-color: #167f71;
+}
+
+.circle {
+    width: 58px;
+    border-radius: 50%;
+    padding: 0; /* Remove inner padding for circular button */
+}
+
+/* paper button */
+/* cards  */
+/* Banner Section */
+.banner-container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    cursor: pointer;
+   
+}
+
+.banner-container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.banner-container .banner {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 15px;
+    scroll-snap-align: center;
+    background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Align content horizontally */
+    align-items: center;
+
+
+}
+
+.banner-container .banner img {
+    max-width: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.banner-container .banner .banner-content {
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+    
+}
+
+.banner-container .banner .banner-content h3 {
+    margin: 0;
+    font-size: 0.7em; /* Adjusted font size */
+    color: #FF6F00; /* Orange color for category */
+}
+
+.banner-container .banner .banner-content h4 {
+    margin: 0;
+    font-size: 0.3em; /* Adjusted font size */
+    color: #000000;
+}
+
+/* cards  */
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensures it starts from the left edge */
+    width: 100%; /* Full width */
+    background-color: #F5F9FF;
+    display: flex;
+    justify-content: center; /* Center the navbar content */
+    padding: 10px 0;
+    margin: 0; /* Remove margin */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #757575;
+    font-weight: bold;
+}
+
+.nav-link i {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-link.active {
+    color: #000;
+}
+
+/* teachers */
+/* Teachers Section */
+.teacher-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.teachers-card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.teachers-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teachers-card:hover {
+    transform: scale(1.05);
+}
+
+.teachers-name {
+    margin-top: 5px;
+    margin-bottom: 60px; /* Add margin bottom for spacing */
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    display: block;
+    width: 100px; /* Match the width of the card */
+}
+
+
+.study-material {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-top: 10px;
+}
+.study-material {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-top: 10px;
+}
+
+.test-card {
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px 30px; /* Padding for spacing */
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 85%;
+    max-width: 600px; /* Maximum width for responsiveness */
+}
+
+.test-name {
+    font-size: 1.5em; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 15px; /* Margin below the title */
+    color: #000; /* Black color */
+}
+
+.test-details {
+    display: flex;
+    justify-content: space-between; /* Evenly spaced items */
+    font-size: 0.9em; /* Smaller font size */
+    color: #007bff; /* Blue color for text */
+}
+
+.test-details span {
+    margin: 0 8px; /* Margin for spacing between details */
+}
