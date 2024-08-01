@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 450px;
+    max-width: auto;
     margin: auto;
     padding: 20px;
     background-color: rgb(255, 255, 255);
@@ -21,14 +21,7 @@ header {
     padding: 15px 0;
 }
 
-.container {
-    max-width: 480px;
-    margin: auto;
-    padding: 20px;
-    background-color: #F5F9FF;
-    border-radius: 15px;
-    justify-content: center;
-}
+
 
 .search-bar {
     display: flex;
@@ -123,6 +116,75 @@ header {
 .carousel-indicators span.active {
     background-color: white;
 }
+
+
+/* Container for all sections */
+.section-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically by default */
+    gap: 20px; /* Space between sections */
+}
+
+/* Individual section item */
+.section-item {
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Container for all sections */
+.section-container {
+    display: flex;
+    flex-direction: row; /* Display side by side by default */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 20px; /* Space between sections */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Individual section item */
+.section-item {
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row with space for margin */
+    max-width: calc(33.33% - 20px); /* Basis width minus the gap for 3 items per row */
+}
+
+/* Image styling */
+.section-image {
+    width: 100%; /* Full width of container */
+    max-width: 150px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    object-fit: cover; /* Ensure image covers container */
+}
+
+/* Title styling */
+.section-title {
+    margin-top: 10px; /* Space between image and title */
+    font-size: 1.2em; /* Adjust as needed */
+    font-weight: bold; /* Bold text */
+    color: #000; /* Black color */
+}
+
+/* Ensure layout consistency across all devices */
+@media (min-width: 600px) {
+    .section-item {
+        flex: 1 1 calc(66.33% - 20px); /* Maintain 3 items per row */
+        max-width: calc(66.33% - 20px); /* Basis width minus the gap for 3 items per row */
+    }
+}
+
+@media (min-width: 900px) {
+    .section-item {
+        flex: 1 1 calc(11.11% - 20px); /* Maintain 3 items per row */
+        max-width: calc(11.11% - 20px); /* Basis width minus the gap for 3 items per row */
+    }
+}
+
+
 
 /* Study Material Section */
 .study-material {
@@ -453,87 +515,42 @@ header h1 {
 }
 
 
-.study-material {
+
+.card-container {
     display: flex;
-    flex-direction: column;
+    gap: 16px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    justify-content: center; /* Center cards within the container */
 }
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    text-align: center;
-}
-
-.column img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.column p {
-    margin-top: 10px;
-}
-.study-material {
-    display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    text-align: center;
-}
-
-.column img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.column p {
-    margin-top: 10px;
-}
-
 .test-card {
-    background-color: #e0e0e0; /* Light gray background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px 30px; /* Padding for spacing */
-    text-align: left; /* Align text to the left */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    width: 85%;
-    max-width: 600px; /* Maximum width for responsiveness */
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for consistency */
+    max-width: 100%; /* Responsive width */
 }
-
 .test-name {
-    font-size: 1.5em; /* Large font size */
-    font-weight: bold; /* Bold text */
-    margin-bottom: 15px; /* Margin below the title */
-    color: #000; /* Black color */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
 }
-
 .test-details {
     display: flex;
-    justify-content: space-between; /* Evenly spaced items */
-    font-size: 0.9em; /* Smaller font size */
-    color: #007bff; /* Blue color for text */
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #007bff;
+}
+.test-details span {
+    margin: 0 8px;
+}
+@media (max-width: 768px) {
+    .test-card {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
 
-.test-details span {
-    margin: 0 8px; /* Margin for spacing between details */
-}
+
+
